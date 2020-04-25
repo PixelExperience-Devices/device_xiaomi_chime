@@ -152,6 +152,11 @@ vendor.gatekeeper.disable_spu=true
 
 # Graphics
 config.disable_rtt=true
+
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
+# Display
 debug.egl.hw=0
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.mdpcomp.logs=0
