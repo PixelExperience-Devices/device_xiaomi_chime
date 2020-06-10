@@ -96,5 +96,4 @@ persist.timed.enable=true
 
 # WFD settings
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=1
 media.wfd.max_resolution=8
