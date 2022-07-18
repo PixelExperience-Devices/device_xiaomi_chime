@@ -25,8 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -114,9 +112,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libgui_vendor \
     libxml2
-
-PRODUCT_PACKAGES += \
-    Snap
 
 # Component overrides
 PRODUCT_COPY_FILES += \
