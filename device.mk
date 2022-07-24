@@ -110,8 +110,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libstdc++.vendor \
-    libgui_vendor \
-    libxml2
+    libgui_vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -184,7 +183,7 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-qti \
+    android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
 # HIDL
