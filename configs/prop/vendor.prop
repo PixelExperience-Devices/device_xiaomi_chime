@@ -193,6 +193,7 @@ ro.surface_flinger.protected_contents=true
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.sf.force_hwc_brightness=1
 
 # Keystore
 keyguard.no_require_sim=true
