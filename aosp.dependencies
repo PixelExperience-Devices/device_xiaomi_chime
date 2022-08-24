@@ -1,0 +1,14 @@
+[
+  { 
+    "repository"   : "vendor_xiaomi_chime",
+    "target_path"  : "vendor/xiaomi/chime",
+    "branch"       : "twelve",
+    "remote"       : "pixel-devices-blobs"
+  },
+  {
+    "repository"   : "kernel_xiaomi_chime",
+    "target_path"  : "kernel/xiaomi/chime",
+    "remote"       : "pixel-devices",
+    "branch"       : "twelve"
+  }
+]
