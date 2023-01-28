@@ -1,3 +1,4 @@
+
 # Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
@@ -114,7 +115,6 @@ vendor.qcom.bluetooth.soc=cherokee
 # Camera
 camera.disable_zsl_mode=1 
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
-vendor.camera.aux.packageexcludelist=us.zoom.videomeetings
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
