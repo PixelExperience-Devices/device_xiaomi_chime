@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "ApertureLime",
+    theme: "ApertureLime",
+    product_specific: true,
+}
