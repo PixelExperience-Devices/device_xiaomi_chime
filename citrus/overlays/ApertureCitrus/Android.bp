@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "ApertureCitrus",
+    theme: "ApertureCitrus",
+    product_specific: true,
+}

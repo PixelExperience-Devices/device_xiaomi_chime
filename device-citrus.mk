@@ -13,5 +13,9 @@ include device/xiaomi/chime/chime.mk
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)/citrus
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    ApertureCitrus
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
