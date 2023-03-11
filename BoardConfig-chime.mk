@@ -94,6 +94,7 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
 
 # HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
@@ -207,3 +208,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/chime/BoardConfigVendor.mk
+
+
+# Inherit from proprietary files for QTI perf
+-include vendor/xiaomi/chime-perf/BoardConfigPerf.mk
