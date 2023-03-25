@@ -153,6 +153,9 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 config.disable_rtt=true
 
+# HWUI
+ro.hwui.render_ahead=20
+
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemuicompilerfilter=speed
