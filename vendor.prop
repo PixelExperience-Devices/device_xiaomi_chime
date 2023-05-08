@@ -155,6 +155,7 @@ config.disable_rtt=true
 
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Display
 debug.egl.hw=0
