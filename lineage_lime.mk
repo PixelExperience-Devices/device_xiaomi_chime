@@ -5,10 +5,13 @@
 #
 
 # Inherit from lime device
-$(call inherit-product, device/xiaomi/chime/device-lime.mk)
+$(call inherit-product, device/xiaomi/sm6115-common/device-lime.mk)
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_lime
+PRODUCT_NAME := lineage_lime
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T

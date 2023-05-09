@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/chime/citrus
+DEVICE_PATH := device/xiaomi/chime/sm6115-commom
 
 # Include common platform configs
-include device/xiaomi/chime/BoardConfig-chime.mk
+include device/xiaomi/chime/BoardConfigCommon.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := citrus,chime,juice

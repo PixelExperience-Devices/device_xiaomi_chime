@@ -325,3 +325,22 @@ vendor/lib/modules/modules.dep
 vendor/lib/modules/modules.load
 vendor/lib/modules/modules.softdep
 vendor/lib/modules/qca_cld3_wlan.ko
+
+# Soter
+-app/SoterService/SoterService.apk
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.soter@1.0.so
+
+# Touch firmware
+vendor/firmware/focaltech_ts_fw.bin
+vendor/firmware/focaltech_ts_fw_TRULY.bin
+vendor/firmware/nt33672a_tianma_novatek_ts_fw.bin
+vendor/firmware/nt33672a_tianma_novatek_ts_mp.bin
+vendor/firmware/nt33672a_truly_novatek_ts_fw.bin
+vendor/firmware/nt33672a_truly_novatek_ts_mp.bin
+vendor/firmware/nt33672d_tianma_novatek_ts_fw.bin
+vendor/firmware/nt33672d_tianma_novatek_ts_mp.bin
+vendor/firmware/nt33672d_xinli_novatek_ts_fw.bin
+vendor/firmware/nt33672d_xinli_novatek_ts_mp.bin

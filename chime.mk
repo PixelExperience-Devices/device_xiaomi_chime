@@ -12,12 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/chime/chime-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sm6115-common/sm6115-common-vendor.mk)
 
-# Inherit custom packages configuration
-$(call inherit-product, device/xiaomi/chime/custom.mk)
-
-# Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
+# Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
@@ -218,6 +215,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.bengal
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
@@ -303,6 +304,9 @@ PRODUCT_PACKAGES += \
     libstagefright_omx.vendor
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     FrameworksCustomChime \
@@ -311,6 +315,7 @@ PRODUCT_PACKAGES += \
     SystemUIResChime \
     TelephonyResChime \
     WifiResCommon
+
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -474,6 +479,10 @@ PRODUCT_PACKAGES += \
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
+
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \

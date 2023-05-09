@@ -5,10 +5,13 @@
 #
 
 # Inherit from citrus device
-$(call inherit-product, device/xiaomi/chime/device-citrus.mk)
+$(call inherit-product, device/xiaomi/sm6115-common/device-citrus.mk)
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_citrus
+PRODUCT_NAME := lineage_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3

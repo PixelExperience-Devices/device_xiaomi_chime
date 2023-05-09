@@ -1182,13 +1182,6 @@ vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
-# Soter
--app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
 # Thermal engine
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine
@@ -1212,25 +1205,6 @@ vendor/etc/thermald-devices.conf
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
-
-# Touch Firmware
-vendor/firmware/aw87359_abrcv.bin
-vendor/firmware/aw87359_abspk.bin
-vendor/firmware/aw87359_drcv.bin
-vendor/firmware/aw87359_dspk.bin
-vendor/firmware/aw87519_drcv.bin
-vendor/firmware/aw87519_hvload.bin
-vendor/firmware/aw87519_kspk.bin
-vendor/firmware/focaltech_ts_fw.bin
-vendor/firmware/focaltech_ts_fw_TRULY.bin
-vendor/firmware/nt33672a_tianma_novatek_ts_fw.bin
-vendor/firmware/nt33672a_tianma_novatek_ts_mp.bin
-vendor/firmware/nt33672a_truly_novatek_ts_fw.bin
-vendor/firmware/nt33672a_truly_novatek_ts_mp.bin
-vendor/firmware/nt33672d_tianma_novatek_ts_fw.bin
-vendor/firmware/nt33672d_tianma_novatek_ts_mp.bin
-vendor/firmware/nt33672d_xinli_novatek_ts_fw.bin
-vendor/firmware/nt33672d_xinli_novatek_ts_mp.bin
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
