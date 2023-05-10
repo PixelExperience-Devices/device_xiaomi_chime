@@ -416,7 +416,6 @@ vendor/lib/hw/fingerprint.silead.default.so
 vendor/lib/com.fingerprints.extension@1.0.so
 vendor/lib/libsl_fp_impl.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/cdfinger.fingerprint.default.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/hw/focal_fingerprint.default.so
