@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/chime/sm6115-common
+DEVICE_PATH := device/xiaomi/sm6115-common/citrus
 
 # Include common platform configs
 include device/xiaomi/sm6115-common/BoardConfigCommon.mk
