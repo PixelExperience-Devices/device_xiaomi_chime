@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from miui_LIMEGlobal_V12.5.11.0.RJQMIXM
+# All unpinned blobs below are extracted from miui_LIMEGlobal_V14.0.3.0.SJQMIXM
 
 # Audio HAL
 vendor/lib/hw/audio.primary.bengal.so
@@ -95,7 +95,7 @@ vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdng_sdk2vendor.so
 vendor/lib64/libft2vendor.so
-vendor/lib64/libicuuc.so
+vendor/lib64/libicuucts.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
@@ -327,7 +327,7 @@ vendor/lib/modules/modules.softdep
 vendor/lib/modules/qca_cld3_wlan.ko
 
 # Soter
--app/SoterService/SoterService.apk
+-vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so

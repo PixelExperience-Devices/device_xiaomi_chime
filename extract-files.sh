@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=chime
+DEVICE=sm6115-common
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
