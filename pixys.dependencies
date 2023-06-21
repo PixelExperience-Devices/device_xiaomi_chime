@@ -1,0 +1,63 @@
+[
+
+    {
+
+        "remote":       "github",
+
+        "repository":   "Notganesh/device_xiaomi_chime",
+
+        "target_path":  "device/xiaomi/chime",
+
+        "branch":     "thirteen"
+
+    },
+
+    {
+
+        "remote":       "github",
+
+        "repository":   "Notganesh/vendor_xiaomi_lime",
+
+        "target_path":  "vendor/xiaomi/lime",
+
+        "branch":     "lineage-20"
+
+    },
+
+    {
+
+        "remote":       "github",
+
+        "repository":   "Notganesh/kernel_xiaomi_chime",
+
+        "target_path":  "kernel/xiaomi/chime",
+
+        "branch":     "lineage-20"
+
+    },
+
+    {
+
+        "remote":       "github",
+
+        "repository":   "LineageOS/android_packages_resources_devicesettings",
+
+        "target_path":  "packages/resources/devicesettings",
+
+        "branch":     "lineage-18.1"
+
+    },
+
+    {
+
+        "remote":       "github",
+
+        "repository":   "Notganesh/android_hardware_xiaomi",
+
+        "target_path":  "hardware/xiaomi",
+
+        "branch":     "lineage-20"
+
+    }
+
+]
