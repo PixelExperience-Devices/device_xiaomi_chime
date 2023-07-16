@@ -6,6 +6,12 @@
     "remote"       : "pixel-devices-blobs"
   },
   {
+    "repository"   : "vendor_xiaomi_chime-perf",
+    "target_path"  : "vendor/xiaomi/chime-perf",
+    "branch"       : "thirteen",
+    "remote"       : "pixel-devices-blobs"
+  },
+  {
     "repository"   : "kernel_xiaomi_chime",
     "target_path"  : "kernel/xiaomi/chime",
     "remote"       : "pixel-devices",
