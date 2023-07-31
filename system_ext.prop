@@ -18,3 +18,6 @@ bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
+
+# Camera
+vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam

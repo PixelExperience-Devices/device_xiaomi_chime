@@ -1,13 +1,17 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 Lilium Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chime.mk
+    $(LOCAL_DIR)/halcyon_citrus.mk \
+    $(LOCAL_DIR)/halcyon_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_chime-user \
-    lineage_chime-userdebug \
-    lineage_chime-eng
+    halcyon_citrus-user \
+    halcyon_citrus-userdebug \
+    halcyon_citrus-eng \
+    halcyon_lime-user \
+    halcyon_lime-userdebug \
+    halcyon_lime-eng

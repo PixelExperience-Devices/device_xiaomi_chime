@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 Lilium Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),chime)
+ifneq ($(filter citrus lime,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

@@ -71,6 +71,8 @@ on late-fs
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/tloc 0700 system drmrpc
+
+#Turbo sched
     chmod 0666 /sys/module/migt/parameters/mi_viptask
     restorecon /sys/module/migt/parameters/mi_viptask
 
@@ -305,6 +307,25 @@ service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
    disabled
    oneshot
 
+service vendor.tcpdump /system/bin/wlantcpdump -i any -W 2 -C 2 -s 134 -w /sdcard/MIUI/debug_log/common/tcpdump.pcap
+    class main
+    user root
+    group root wifi
+    disabled
+    oneshot
+
+on property:persist.vendor.tcpdump.enable=true
+    start vendor.tcpdump
+
+on property:persist.vendor.tcpdump.enable=false
+    stop vendor.tcpdump
+
+on property:persist.vendor.cnss_diag.enable=true
+    start vendor.cnss_diag
+
+on property:persist.vendor.cnss_diag.enable=false
+    stop vendor.cnss_diag
+
 #xiong add charge_logger
 service charge_logger vendor/bin/charge_logger
    class late_start
@@ -444,9 +465,3 @@ on property:sys.boot_completed=1
 ########### FTM end ##########
 ########### FTM end ##########
 
-service checknv /system/bin/checknv
-    class main
-    user root
-    group root system
-    oneshot
-    seclabel u:r:checknv:s0
