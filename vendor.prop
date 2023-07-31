@@ -245,13 +245,6 @@ persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
-# PASR
-vendor.pasr.activemode.enabled=true
-vendor.power.pasr.enabled=false
-
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Platform
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6115
