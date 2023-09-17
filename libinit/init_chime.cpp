@@ -30,7 +30,7 @@ static const variant_info_t lime_info = {
     .device = "lime",
     .marketname = "Redmi 9T",
     .model = "M2010J19SG",
-    .build_fingerprint = "Redmi/lime/lime:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/lime_global/lime:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
 
     .nfc = false,
 };
@@ -43,7 +43,7 @@ static const variant_info_t pomelo_info = {
     .device = "pomelo",
     .marketname = "Redmi 9 Power",
     .model = "M2010J19SL",
-    .build_fingerprint = "Redmi/pomelo/pomelo:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/lime_global/lime:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
 
     .nfc = false,
 };
@@ -56,7 +56,7 @@ static const variant_info_t lemon_info = {
     .device = "lemon",
     .marketname = "Redmi 9T NFC",
     .model = "M2010J19SY",
-    .build_fingerprint = "Redmi/lemon/lemon:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/lime_global/lime:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
 
     .nfc = true,
 };
