@@ -309,7 +309,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
-    FrameworksCustomChime \
     FrameworksResChime \
     SettingsResChime \
     SystemUIResChime \
