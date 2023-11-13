@@ -1,9 +1,6 @@
 # Camera
 persist.vendor.camera.privapp.list=com.android.camera,org.codeaurora.snapcam
 
-# Charger
-ro.charger.disable_init_blank=true
-
 # CNE
 persist.vendor.cne.feature=1
 
