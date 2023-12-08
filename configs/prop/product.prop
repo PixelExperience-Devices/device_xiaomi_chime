@@ -8,3 +8,10 @@ audio.sys.offload.pstimeout.secs=3
 
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true
+
+# DEX
+pm.dexopt.install=space-profile
+pm.dexopt.install-bulk=space-profile
+pm.dexopt.bg-dexopt=space-profile
+pm.dexopt.ab-ota=space-profile
+pm.dexopt.shared=space
