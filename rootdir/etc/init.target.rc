@@ -69,7 +69,6 @@ on late-fs
     mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs-data
-    mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/tloc 0700 system drmrpc
 
 #Turbo sched
