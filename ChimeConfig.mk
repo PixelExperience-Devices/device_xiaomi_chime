@@ -92,12 +92,12 @@ TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/vintf/framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
 
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/vintf/compatibility_matrix.xml
 
 # Health - LineageOS
 include device/xiaomi/chime/LineageConfig.mk
@@ -148,11 +148,11 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/configs/prop/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/prop/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/prop/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/prop/vendor.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/configs/prop/system_ext.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
