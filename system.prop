@@ -44,7 +44,6 @@ ro.nfc.port=I2C
 
 # Radio
 persist.sys.fflag.override.settings_provider_model=false
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,20
 
