@@ -922,4 +922,6 @@
     <!-- Whether this device supports Qualcomm BoostFramework -->
     <bool name="config_supportsBoostFramework">true</bool>
 
+    <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
 </resources>
