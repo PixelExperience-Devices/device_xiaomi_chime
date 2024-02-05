@@ -465,6 +465,23 @@ service panel_color /vendor/bin/panelcolor_bin
 on property:sys.boot_completed=1
     start panel_color
 
+on property:sys.boot_completed=1
+    wait 10
+    write /dev/stune/schedtune.boost 0
+    write /dev/stune/schedtune.prefer_idle 0
+    write /dev/stune/schedtune.sched_boost_no_override 0
+    write /dev/stune/top-app/schedtune.boost 4
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.sched_boost_no_override 4
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/cpuset/foreground/cpus "0-5,7"
+    write /dev/cpuset/background/cpus "4-5"
+    write /dev/cpuset/system-background/cpus "2-5"
+    write /dev/cpuset/restricted/cpus "2-5"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq "0:1804800 1:1804800 2:1804800 3:1804800 4:2016000 5:2016000 6:2016000 7:2016000"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms 2000
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 0
+
 ########### FTM end ##########
 ########### FTM end ##########
 ########### FTM end ##########
