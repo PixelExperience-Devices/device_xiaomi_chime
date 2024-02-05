@@ -32,9 +32,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
-# Flatten APEXs for performance
-OVERRIDE_TARGET_FLATTEN_APEX := true
-
 # Product Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
