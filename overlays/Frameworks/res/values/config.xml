@@ -919,4 +919,7 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent). -->
     <string name="config_mainBuiltInDisplayCutout">M -78,0 L -78,78 L 78,78 L 78,0 Z</string>
 
+    <!-- Whether this device supports Qualcomm BoostFramework -->
+    <bool name="config_supportsBoostFramework">true</bool>
+
 </resources>
