@@ -20,8 +20,8 @@ $(call inherit-product, vendor/xiaomi/chime/chime-vendor.mk)
 # Inherit from proprietary files for QTI perf
 $(call inherit-product-if-exists, vendor/xiaomi/chime-perf/perf.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, device/xiaomi/chime/lineage.mk)
+# Inherit some common PixelExperience stuff
+$(call inherit-product, device/xiaomi/chime/custom.mk)
 
 # Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true

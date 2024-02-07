@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := halcyon_citrus
+PRODUCT_NAME := aosp_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3

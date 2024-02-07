@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := halcyon_lime
+PRODUCT_NAME := aosp_lime
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T
